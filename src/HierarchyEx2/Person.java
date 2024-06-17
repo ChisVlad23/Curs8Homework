@@ -1,10 +1,11 @@
 package HierarchyEx2;
-import java.time.LocalDateTime;
+
+import java.util.Date;
 
 public interface Person {
 String getFirstName();
 String getLastName();
-LocalDateTime getBirthday();
+Date getBirthday();
 String getAddress();
 
 }

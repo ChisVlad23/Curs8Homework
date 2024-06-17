@@ -12,8 +12,9 @@ private final String dbTechnology;
         return "db admin";
     }
 
-    public DatabaseAdmin(Date dateOfEmploment, String position, String dbTechnology) {
-        super(dateOfEmploment, position);
+    public DatabaseAdmin(Date dateOfEmployment, String position, String firstName,
+                         String lastName, String birthday, String dbTechnology) {
+        super(dateOfEmployment, position, firstName, lastName, birthday);
         this.dbTechnology = dbTechnology;
     }
 }

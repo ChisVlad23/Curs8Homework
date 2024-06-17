@@ -20,7 +20,7 @@ public class Main {
 
         //Ex3 data extraction
 
-        Employee employee = new Employee(new Date(23/07/2023),"sef");
+       // Employee employee = new Employee();
 
 
         //Programer programer = new Programer(new Date(23/05/2023),"wasd","english");

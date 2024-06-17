@@ -1,26 +1,31 @@
 package HierarchyEx2;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Employee implements Person{
-
-    private final Date dateOfEmploment;
+    private final String firstName;
+    private final String lastName;
+    private final Date dateOfEmployment;
     public String position;
+    public Date birthday;
 
-    public Employee(Date dateOfEmploment, String position) {
-        this.dateOfEmploment = dateOfEmploment;
+
+    public Employee(Date dateOfEmployment, String position, String firstName, String lastName, String birthday) {
+        this.dateOfEmployment = dateOfEmployment;
         this.position = position;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
+
 
     @Override
     public String getFirstName() {
-        return "";
+        return firstName;
     }
 
     @Override
     public String getLastName() {
-        return "";
+        return lastName;
     }
 
     @Override
@@ -29,8 +34,8 @@ public class Employee implements Person{
     }
 
     @Override
-    public LocalDateTime getBirthday() {
-        return null;
+    public Date getBirthday() {
+        return birthday;
     }
 
 

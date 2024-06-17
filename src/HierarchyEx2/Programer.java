@@ -6,8 +6,9 @@ public class Programer extends Employee{
 
 private final String language;
 
-    public Programer(Date dateOfEmploment, String position, String language) {
-        super(dateOfEmploment, position);
+    public Programer(Date dateOfEmployment, String position,
+                     String firstName, String lastName, String birthday, String language) {
+        super(dateOfEmployment, position, firstName, lastName, birthday);
         this.language = language;
     }
 

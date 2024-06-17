@@ -1,6 +1,7 @@
 package HierarchyEx2;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class PersonData {
     private final Person person;
@@ -13,8 +14,8 @@ public class PersonData {
         return person.getFirstName() + " " + person.getLastName();
     }
 
- //   public int getAge(){
- //       LocalDate today = LocalDate.now();
+   public Integer getAge() {
+       return LocalDateTime.now().getYear() - person.getBirthday().getYear();
 
-    //}
+   }
 }
